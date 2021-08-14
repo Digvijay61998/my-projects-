@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  type= "text/css" href ="web-site-scrolling.css">
+
+</head>
+<body>
+    <section>
+        <div>
+            <h2 class="reveal">afasasfasfafaasfsffafa</h2>
+            <h2 class="reveal">asdasffaasasfasfa</h2>
+            <img src="leaves1.png">
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2 class="reveal">afasasfasfafaasfsffafa</h2>
+            <h2 class="reveal">asdasffaasasfasfa</h2>
+            <img src="leaves2.png">
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2 class="reveal">afasasfasfafaasfsffafa</h2>
+            <h2 class="reveal">asdasffaasasfasfa</h2>
+            <img src="leaves3.png">
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2 class="reveal">afasasfasfafaasfsffafa</h2>
+            <h2 class="reveal">asdasffaasasfasfa</h2>
+            <img src="leaves4.png">
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js"></script>
+      -->
+    
+     
+     <script type="text/javascript">const reveal = gsap.utils.toArray('.reveal');
+
+
+
+        reveal.forEach((text, i) => {
+            ScrollTrigger.create({
+                trigger:text,
+                toggleClass:'active',
+                start:"top 100%",
+                end: "top 20%",
+                markers: true
+            })
+            
+          })
+          </script>
+</body>
+</html>
